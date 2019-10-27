@@ -1,0 +1,21 @@
+#popup-container {
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+button {
+    margin: 20px;
+    padding: 20px;
+    min-width: 200px;
+    color: white;
+}
+
+button.activated {
+    background-color: green;
+}
+
+button.deactivated {
+    background-color: black;
+}
+

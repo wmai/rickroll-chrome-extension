@@ -1,0 +1,23 @@
+{
+    "name": "rickroll-chrome-extension",
+    "description": "Never gonna give you up.",
+    "version": "0.0.1",
+    "scripts": {
+        "clean": "rm -rf dist",
+        "development:parcel": "parcel --no-autoinstall --no-source-maps --no-hmr src/popup.html src/contentScript.js src/background.js",
+        "development:copy-manifest": "cpx src/manifest.json dist --watch --verbose",
+        "development": "npm-run-all clean --parallel development:parcel development:copy-manifest"
+    },
+    "dependencies": {
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-react": "^6.24.1",
+        "cpx": "^1.5.0",
+        "npm-run-all": "^4.1.5",
+        "parcel-bundler": "^1.12.3"
+    }
+}
